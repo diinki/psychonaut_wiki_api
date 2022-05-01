@@ -1,0 +1,20 @@
+[package]
+name = "psychonaut_wiki_api"
+authors = ["Diinki Gati, <https://imp.works>"]
+keywords = ["psychonaut", "wiki", "psychedelics", "api"]
+description = "Rust implementation of the PsychonautWiki API. Used in the terminal_psychonautica project."
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+serde = { version = "1.0.136", features = ["derive", "serde_derive"]}
+serde_json = { version = "1.0.79"}
+
+reqwest = { version = "0.11", features = ["json", "gzip", "deflate", "brotli", "rustls-tls"]}
+
+tokio = { version = "1.17.0", features = ["full"]}
+tracing = { version = "0.1.29"}
