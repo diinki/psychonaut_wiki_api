@@ -1,5 +1,6 @@
 pub mod http;
 pub mod substance;
+pub mod types;
 
 #[cfg(test)]
 mod tests {
