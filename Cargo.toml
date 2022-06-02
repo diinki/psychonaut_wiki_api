@@ -4,6 +4,7 @@ authors = ["Ira Gati, <https://imp.works>"]
 keywords = ["psychonaut", "wiki", "psychedelics", "api", "psychonautwiki.org"]
 description = "Rust implementation of the PsychonautWiki API. Used in the terminal_psychonautica project."
 version = "0.1.0"
+license = "MIT"
 edition = "2021"
 publish = true
 
