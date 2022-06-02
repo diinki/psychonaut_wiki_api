@@ -5,7 +5,7 @@ keywords = ["psychonaut", "wiki", "psychedelics", "api", "psychonautwiki.org"]
 description = "Rust implementation of the PsychonautWiki API. Used in the terminal_psychonautica project."
 version = "0.1.0"
 edition = "2021"
-publish = false
+publish = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
