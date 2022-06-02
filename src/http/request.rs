@@ -1,7 +1,6 @@
 use reqwest::{Response};
 use serde::Deserialize;
-use serde_json::{self};
-use gql_client::{Client, GraphQLError, GraphQLErrorMessage};
+use gql_client::{Client};
 use tracing::{trace, error};
 
 use crate::substance::Substance;
