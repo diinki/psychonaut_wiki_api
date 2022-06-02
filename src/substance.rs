@@ -1,43 +1,42 @@
 use crate::types::{ MinMax, EffectTimeDuration };
+use serde::{Deserialize, Serialize};
 
 
-
+#[derive(Serialize, Deserialize, Default, Debug)]
 pub struct Substance {
-    name: String,
-    routes_of_administration: RoutesOfAdministration,
-    effects: Vec<Effect>
+    pub name: Option<String>,
+    #[serde(rename(deserialize = "roas", serialize = "roas"))]
+    pub routes_of_administration: Option<Vec<RoutesOfAdministration>>,
+    pub effects: Option<Vec<Effect>>
 }
-
+#[derive(Serialize, Deserialize, Default, Debug)]
 pub struct RoutesOfAdministration {
-    name: String,
-    dose: Dose,
-    duration: Duration,
-
-    bioavailability: MinMax,
+    pub bioavailability: Option<MinMax>,
+    pub duration: Option<Duration>,
+    pub name: Option<String>,
+    pub dose: Option<Dose>,
 }
-
+#[derive(Serialize, Deserialize, Default, Debug)]
 pub struct Dose {
-    units: String,
-    threshold: f32,
-
-    heavy: f32,
-
-    common: MinMax,
-    light: MinMax,
-    strong: MinMax,
+    pub threshold: Option<f32>,
+    pub strong: Option<MinMax>,
+    pub common: Option<MinMax>,
+    pub light: Option<MinMax>,
+    pub heavy: Option<f32>,
+    pub units: Option<String>,
 }
-
+#[derive(Serialize, Deserialize, Default, Debug)]
 pub struct Duration {
-    afterglow: EffectTimeDuration,
-    comeup: EffectTimeDuration,
-    duration: EffectTimeDuration,
-    offset: EffectTimeDuration,
-    onset: EffectTimeDuration,
-    peak: EffectTimeDuration,
-    total: EffectTimeDuration,
+    pub afterglow: Option<EffectTimeDuration>,
+    pub duration: Option<EffectTimeDuration>,
+    pub comeup: Option<EffectTimeDuration>,
+    pub offset: Option<EffectTimeDuration>,
+    pub onset: Option<EffectTimeDuration>,
+    pub total: Option<EffectTimeDuration>,
+    pub peak: Option<EffectTimeDuration>,
 }
-
+#[derive(Serialize, Deserialize, Default, Debug)]
 pub struct Effect {
-    name: String,
-    url: String
+    pub name: Option<String>,
+    pub url: Option<String>
 }

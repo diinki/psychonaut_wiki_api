@@ -1,10 +1,20 @@
+use serde::{Deserialize, Serialize};
 
+
+#[derive(Serialize, Deserialize, Default, Debug)]
 pub struct MinMax {
-    min: f32,
-    max: f32,
+    pub min: Option<f32>,
+    pub max: Option<f32>,
+}
+#[derive(Serialize, Deserialize, Default, Debug)]
+pub struct EffectTimeDuration {
+    pub units: Option<String>,
+    pub min: Option<f32>,
+    pub max: Option<f32>,
 }
 
-pub struct EffectTimeDuration {
-    timespan: MinMax,
-    units: String
+#[derive(Serialize, Deserialize, Default, Debug)]
+pub struct ResponseError {
+    pub message: Option<String>,
+    pub code: Option<String>,
 }

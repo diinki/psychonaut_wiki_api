@@ -1,6 +1,6 @@
 [package]
 name = "psychonaut_wiki_api"
-authors = ["Diinki Gati, <https://imp.works>"]
+authors = ["Ira Gati, <https://imp.works>"]
 keywords = ["psychonaut", "wiki", "psychedelics", "api"]
 description = "Rust implementation of the PsychonautWiki API. Used in the terminal_psychonautica project."
 version = "0.1.0"
@@ -14,6 +14,7 @@ publish = false
 serde = { version = "1.0.136", features = ["derive", "serde_derive"]}
 serde_json = { version = "1.0.79"}
 
+gql_client = "1.0.4"
 reqwest = { version = "0.11", features = ["json", "gzip", "deflate", "brotli", "rustls-tls"]}
 
 tokio = { version = "1.17.0", features = ["full"]}

@@ -1,12 +1,10 @@
+//! # psychonaut_wiki_api
+//! This API is fairly simple in terms of usage and how it works!
+//! 
+//! Use it to build applications which may need to reference substances
+//! the psychonaut wiki contains :D
+//!
 pub mod http;
 pub mod substance;
 pub mod types;
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
-}
+pub mod query;
