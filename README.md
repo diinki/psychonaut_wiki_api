@@ -1,10 +1,10 @@
-<h1 align="center">psychonaut_wiki_api - 0.1.0 </h1>
+<h1 align="center">psychonaut_wiki_api</h1>
 
 This crate/library provides an easy-to-use API to access data from 
 [Psychonaut Wiki](https://psychonautwiki.org), a wiki which contains
 information about substances.
 
-## Overview
+## Overview (=w=)
 This API provides a simple function which returns a data structure containing
 all information the wiki has about a substance with a given name.
 
@@ -12,7 +12,7 @@ This API is used in other projects such as terminal_psychonautica, which can
 be used as an example of how this API is used; despite that, this is not needed
 since it is a very simple API.
 
-## Usage & Examples
+## Usage & Examples </>
 
 * Add the Crate to your project
 
@@ -48,9 +48,10 @@ async fn main() {
 }
 ```
 
-## Notes
+## @-Some Notes-@
 * This crate uses the Tokio async runtime, as making requests in a synchronous manner is slower.
 * If a substance is not found, the `substances` vector will simply be None.
+* This Crate is an independent project by me.
 * This Crate is early, feel free to contribute, use, or give feedback! You can contact me on `diinki@imp.works`.
 
 ## Licensing

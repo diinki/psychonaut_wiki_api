@@ -1,7 +1,7 @@
 [package]
 name = "psychonaut_wiki_api"
 authors = ["Ira Gati, <https://imp.works>"]
-keywords = ["psychonaut", "wiki", "psychedelics", "api"]
+keywords = ["psychonaut", "wiki", "psychedelics", "api", "psychonautwiki.org"]
 description = "Rust implementation of the PsychonautWiki API. Used in the terminal_psychonautica project."
 version = "0.1.0"
 edition = "2021"
