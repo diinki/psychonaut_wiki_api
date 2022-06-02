@@ -1,5 +1,12 @@
 <h1 align="center">psychonaut_wiki_api</h1>
 
+<div align="center">
+    <img alt="GitHub Workflow Status (event)" src="https://img.shields.io/github/workflow/status/diinki/psychonaut_wiki_api/Rust?event=push&style=flat-square"/>
+    <img alt="Crates.io" src="https://img.shields.io/crates/v/psychonaut_wiki_api?style=flat-square"/>
+    <img alt="GitHub" src="https://img.shields.io/github/license/diinki/psychonaut_wiki_api?style=flat-square">
+</div>
+
+
 This crate/library provides an easy-to-use API to access data from 
 [Psychonaut Wiki](https://psychonautwiki.org), a wiki which contains
 information about substances.
